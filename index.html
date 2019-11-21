@@ -1,47 +1,61 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
 
-<div class="container">
-    <div class="span3 well">
-        <center>
-        <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://github.com/suveerrao/suveerrao.github.io/blob/master/profilepic.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
-        <h3>Joe Sixpack</h3>
-        <em>click my face for more</em>
-		</center>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
-                    </div>
-                <div class="modal-body">
-                    <center>
-                    <img src="https://github.com/suveerrao/suveerrao.github.io/blob/master/profilepic.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-                    <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
-                    <span><strong>Skills: </strong></span>
-                        <span class="label label-warning">HTML5/CSS</span>
-                        <span class="label label-info">Adobe CS 5.5</span>
-                        <span class="label label-info">Microsoft Office</span>
-                        <span class="label label-success">Windows XP, Vista, 7</span>
-                    </center>
-                    <hr>
-                    <center>
-                    <p class="text-left"><strong>Bio: </strong><br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
-                    <br>
-                    </center>
-                </div>
-                <div class="modal-footer">
-                    <center>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+  <img src="profilepic.jpg" alt="John" style="width:100%">
+  <h1>Suveer</h1>
+  <p class="title">Devops Engineer</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
 </div>
+
+</body>
+</html>
